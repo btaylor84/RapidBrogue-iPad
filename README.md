@@ -71,7 +71,6 @@ and then when confirmed with another touch your rogue will follow the path. If
 you need to cancel an action, drag your finger till it highlights your rogue,
 then lift it off safely.
 
-Hovering your finger on a spot will open a magnified view of that location.
 <br>
 <br>
 If you are using an attached keyboard, Vi/Nethack keyboard movements (i.e.
@@ -121,3 +120,7 @@ well play-tested.
 
 
 [releases]: https://github.com/tmewett/BrogueCE/releases
+
+### Tips
+The app is free and open source, but there are fees associated with publishing it, so tips
+are apprecaited at [buy me a coffee.](https://ko-fi.com/cameradv)
