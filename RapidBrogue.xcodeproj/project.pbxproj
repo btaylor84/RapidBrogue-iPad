@@ -7,23 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C48D51472829EBA90040FB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D51462829EBA90040FB96 /* AppDelegate.swift */; };
-		C48D51492829EBA90040FB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D51482829EBA90040FB96 /* SceneDelegate.swift */; };
-		C48D514B2829EBA90040FB96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D514A2829EBA90040FB96 /* ViewController.swift */; };
-		C48D514E2829EBA90040FB96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48D514C2829EBA90040FB96 /* Main.storyboard */; };
-		C48D51502829EBA90040FB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48D514F2829EBA90040FB96 /* Assets.xcassets */; };
-		C48D51532829EBA90040FB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48D51512829EBA90040FB96 /* LaunchScreen.storyboard */; };
+		C48D51DF2829EC140040FB96 /* BrogueCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48D51942829EC140040FB96 /* BrogueCE.ttf */; };
+		C491BF92282AD2730062FB63 /* platformdependent.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF90282AD2730062FB63 /* platformdependent.c */; };
+		C491BFA9282AD27C0062FB63 /* PowerTables.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF94282AD27C0062FB63 /* PowerTables.c */; };
+		C491BFAA282AD27C0062FB63 /* RogueMain.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF95282AD27C0062FB63 /* RogueMain.c */; };
+		C491BFAB282AD27C0062FB63 /* Combat.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF96282AD27C0062FB63 /* Combat.c */; };
+		C491BFAC282AD27C0062FB63 /* Math.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF97282AD27C0062FB63 /* Math.c */; };
+		C491BFAD282AD27C0062FB63 /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF98282AD27C0062FB63 /* Items.c */; };
+		C491BFAE282AD27C0062FB63 /* Dijkstra.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF99282AD27C0062FB63 /* Dijkstra.c */; };
+		C491BFAF282AD27C0062FB63 /* IO.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF9A282AD27C0062FB63 /* IO.c */; };
+		C491BFB0282AD27C0062FB63 /* Buttons.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF9B282AD27C0062FB63 /* Buttons.c */; };
+		C491BFB1282AD27C0062FB63 /* Monsters.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF9E282AD27C0062FB63 /* Monsters.c */; };
+		C491BFB2282AD27C0062FB63 /* MainMenu.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF9F282AD27C0062FB63 /* MainMenu.c */; };
+		C491BFB3282AD27C0062FB63 /* Movement.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA0282AD27C0062FB63 /* Movement.c */; };
+		C491BFB4282AD27C0062FB63 /* Time.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA1282AD27C0062FB63 /* Time.c */; };
+		C491BFB5282AD27C0062FB63 /* Light.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA2282AD27C0062FB63 /* Light.c */; };
+		C491BFB6282AD27C0062FB63 /* Architect.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA3282AD27C0062FB63 /* Architect.c */; };
+		C491BFB7282AD27C0062FB63 /* SeedCatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA4282AD27C0062FB63 /* SeedCatalog.c */; };
+		C491BFB8282AD27C0062FB63 /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA5282AD27C0062FB63 /* Utilities.c */; };
+		C491BFB9282AD27C0062FB63 /* Grid.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA6282AD27C0062FB63 /* Grid.c */; };
+		C491BFBA282AD27C0062FB63 /* Recordings.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA7282AD27C0062FB63 /* Recordings.c */; };
+		C491BFBB282AD27C0062FB63 /* Globals.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BFA8282AD27C0062FB63 /* Globals.c */; };
+		C491BFD1282AD29C0062FB63 /* gamecenterlogo_brogue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFBD282AD29C0062FB63 /* gamecenterlogo_brogue@2x.png */; };
+		C491BFD2282AD29C0062FB63 /* brogue_dismissbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFBE282AD29C0062FB63 /* brogue_dismissbutton.png */; };
+		C491BFD3282AD29C0062FB63 /* about_brogue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFBF282AD29C0062FB63 /* about_brogue@2x.png */; };
+		C491BFD4282AD29C0062FB63 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC0282AD29C0062FB63 /* Default-Landscape~ipad.png */; };
+		C491BFD5282AD29C0062FB63 /* brogue_directionals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC1282AD29C0062FB63 /* brogue_directionals@2x.png */; };
+		C491BFD6282AD29C0062FB63 /* icon_144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC2282AD29C0062FB63 /* icon_144x144.png */; };
+		C491BFD7282AD29C0062FB63 /* brogue_sproutedseed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC3282AD29C0062FB63 /* brogue_sproutedseed@2x.png */; };
+		C491BFD8282AD29C0062FB63 /* brogue_dismissbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC4282AD29C0062FB63 /* brogue_dismissbutton@2x.png */; };
+		C491BFD9282AD29C0062FB63 /* about_brogue.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC5282AD29C0062FB63 /* about_brogue.png */; };
+		C491BFDA282AD29C0062FB63 /* icon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC6282AD29C0062FB63 /* icon_72x72.png */; };
+		C491BFDB282AD29C0062FB63 /* brogue_showinventory_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC7282AD29C0062FB63 /* brogue_showinventory_button.png */; };
+		C491BFDC282AD29C0062FB63 /* brogue_escapebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC8282AD29C0062FB63 /* brogue_escapebutton@2x.png */; };
+		C491BFDD282AD29C0062FB63 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFC9282AD29C0062FB63 /* Default-Landscape@2x~ipad.png */; };
+		C491BFDE282AD29C0062FB63 /* brogue_sproutedseed.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCA282AD29C0062FB63 /* brogue_sproutedseed.png */; };
+		C491BFDF282AD29C0062FB63 /* brogue_directionals.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCB282AD29C0062FB63 /* brogue_directionals.png */; };
+		C491BFE0282AD29C0062FB63 /* brogue_escapebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCC282AD29C0062FB63 /* brogue_escapebutton.png */; };
+		C491BFE1282AD29C0062FB63 /* brogue_showinventory_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCD282AD29C0062FB63 /* brogue_showinventory_button@2x.png */; };
+		C491BFE2282AD29C0062FB63 /* brogue_seed.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCE282AD29C0062FB63 /* brogue_seed.png */; };
+		C491BFE3282AD29C0062FB63 /* gamecenterlogo_brogue.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFCF282AD29C0062FB63 /* gamecenterlogo_brogue.png */; };
+		C491BFE4282AD29C0062FB63 /* brogue_seed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C491BFD0282AD29C0062FB63 /* brogue_seed@2x.png */; };
+		C491BFF1282AD2A60062FB63 /* RogueScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491BFE6282AD2A60062FB63 /* RogueScene.swift */; };
+		C491BFF2282AD2A60062FB63 /* BrogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491BFE7282AD2A60062FB63 /* BrogueViewController.swift */; };
+		C491BFF3282AD2A60062FB63 /* RogueDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = C491BFE8282AD2A60062FB63 /* RogueDriver.mm */; };
+		C491BFF4282AD2A60062FB63 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491BFE9282AD2A60062FB63 /* Cell.swift */; };
+		C491BFF6282AD2A60062FB63 /* SKViewPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491BFED282AD2A60062FB63 /* SKViewPort.swift */; };
+		C491BFF7282AD2A60062FB63 /* DirectionControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C491BFF0282AD2A60062FB63 /* DirectionControlsViewController.m */; };
+		C491BFFB282AD2B30062FB63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C491BFF8282AD2B30062FB63 /* AppDelegate.m */; };
+		C491BFFC282AD2B30062FB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C491BFFA282AD2B30062FB63 /* Main.storyboard */; };
+		C491BFFE282AD3020062FB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C491BFFD282AD3020062FB63 /* main.m */; };
+		C491C000282AD30D0062FB63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C491BFFF282AD30D0062FB63 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C48D51432829EBA90040FB96 /* RapidBrogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidBrogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C48D51462829EBA90040FB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C48D51482829EBA90040FB96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C48D514A2829EBA90040FB96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C48D514D2829EBA90040FB96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C48D514F2829EBA90040FB96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C48D51522829EBA90040FB96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C48D51542829EBA90040FB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48D51942829EC140040FB96 /* BrogueCE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrogueCE.ttf; sourceTree = "<group>"; };
+		C491BF8D282AD2730062FB63 /* PlatformDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefines.h; sourceTree = "<group>"; };
+		C491BF8F282AD2730062FB63 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		C491BF90282AD2730062FB63 /* platformdependent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platformdependent.c; sourceTree = "<group>"; };
+		C491BF94282AD27C0062FB63 /* PowerTables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PowerTables.c; sourceTree = "<group>"; };
+		C491BF95282AD27C0062FB63 /* RogueMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RogueMain.c; sourceTree = "<group>"; };
+		C491BF96282AD27C0062FB63 /* Combat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Combat.c; sourceTree = "<group>"; };
+		C491BF97282AD27C0062FB63 /* Math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Math.c; sourceTree = "<group>"; };
+		C491BF98282AD27C0062FB63 /* Items.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Items.c; sourceTree = "<group>"; };
+		C491BF99282AD27C0062FB63 /* Dijkstra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dijkstra.c; sourceTree = "<group>"; };
+		C491BF9A282AD27C0062FB63 /* IO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IO.c; sourceTree = "<group>"; };
+		C491BF9B282AD27C0062FB63 /* Buttons.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buttons.c; sourceTree = "<group>"; };
+		C491BF9C282AD27C0062FB63 /* Rogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rogue.h; sourceTree = "<group>"; };
+		C491BF9D282AD27C0062FB63 /* IncludeGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncludeGlobals.h; sourceTree = "<group>"; };
+		C491BF9E282AD27C0062FB63 /* Monsters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Monsters.c; sourceTree = "<group>"; };
+		C491BF9F282AD27C0062FB63 /* MainMenu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MainMenu.c; sourceTree = "<group>"; };
+		C491BFA0282AD27C0062FB63 /* Movement.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Movement.c; sourceTree = "<group>"; };
+		C491BFA1282AD27C0062FB63 /* Time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Time.c; sourceTree = "<group>"; };
+		C491BFA2282AD27C0062FB63 /* Light.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Light.c; sourceTree = "<group>"; };
+		C491BFA3282AD27C0062FB63 /* Architect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Architect.c; sourceTree = "<group>"; };
+		C491BFA4282AD27C0062FB63 /* SeedCatalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SeedCatalog.c; sourceTree = "<group>"; };
+		C491BFA5282AD27C0062FB63 /* Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.c; sourceTree = "<group>"; };
+		C491BFA6282AD27C0062FB63 /* Grid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Grid.c; sourceTree = "<group>"; };
+		C491BFA7282AD27C0062FB63 /* Recordings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Recordings.c; sourceTree = "<group>"; };
+		C491BFA8282AD27C0062FB63 /* Globals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Globals.c; sourceTree = "<group>"; };
+		C491BFBD282AD29C0062FB63 /* gamecenterlogo_brogue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gamecenterlogo_brogue@2x.png"; sourceTree = "<group>"; };
+		C491BFBE282AD29C0062FB63 /* brogue_dismissbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_dismissbutton.png; sourceTree = "<group>"; };
+		C491BFBF282AD29C0062FB63 /* about_brogue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_brogue@2x.png"; sourceTree = "<group>"; };
+		C491BFC0282AD29C0062FB63 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		C491BFC1282AD29C0062FB63 /* brogue_directionals@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_directionals@2x.png"; sourceTree = "<group>"; };
+		C491BFC2282AD29C0062FB63 /* icon_144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_144x144.png; sourceTree = "<group>"; };
+		C491BFC3282AD29C0062FB63 /* brogue_sproutedseed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_sproutedseed@2x.png"; sourceTree = "<group>"; };
+		C491BFC4282AD29C0062FB63 /* brogue_dismissbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_dismissbutton@2x.png"; sourceTree = "<group>"; };
+		C491BFC5282AD29C0062FB63 /* about_brogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_brogue.png; sourceTree = "<group>"; };
+		C491BFC6282AD29C0062FB63 /* icon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72x72.png; sourceTree = "<group>"; };
+		C491BFC7282AD29C0062FB63 /* brogue_showinventory_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_showinventory_button.png; sourceTree = "<group>"; };
+		C491BFC8282AD29C0062FB63 /* brogue_escapebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_escapebutton@2x.png"; sourceTree = "<group>"; };
+		C491BFC9282AD29C0062FB63 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		C491BFCA282AD29C0062FB63 /* brogue_sproutedseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_sproutedseed.png; sourceTree = "<group>"; };
+		C491BFCB282AD29C0062FB63 /* brogue_directionals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_directionals.png; sourceTree = "<group>"; };
+		C491BFCC282AD29C0062FB63 /* brogue_escapebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_escapebutton.png; sourceTree = "<group>"; };
+		C491BFCD282AD29C0062FB63 /* brogue_showinventory_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_showinventory_button@2x.png"; sourceTree = "<group>"; };
+		C491BFCE282AD29C0062FB63 /* brogue_seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_seed.png; sourceTree = "<group>"; };
+		C491BFCF282AD29C0062FB63 /* gamecenterlogo_brogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gamecenterlogo_brogue.png; sourceTree = "<group>"; };
+		C491BFD0282AD29C0062FB63 /* brogue_seed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_seed@2x.png"; sourceTree = "<group>"; };
+		C491BFE6282AD2A60062FB63 /* RogueScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RogueScene.swift; sourceTree = "<group>"; };
+		C491BFE7282AD2A60062FB63 /* BrogueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrogueViewController.swift; sourceTree = "<group>"; };
+		C491BFE8282AD2A60062FB63 /* RogueDriver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RogueDriver.mm; sourceTree = "<group>"; };
+		C491BFE9282AD2A60062FB63 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		C491BFEB282AD2A60062FB63 /* RogueDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueDriver.h; sourceTree = "<group>"; };
+		C491BFEC282AD2A60062FB63 /* RapidBrogue-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RapidBrogue-Bridging-Header.h"; sourceTree = "<group>"; };
+		C491BFED282AD2A60062FB63 /* SKViewPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewPort.swift; sourceTree = "<group>"; };
+		C491BFEF282AD2A60062FB63 /* DirectionControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionControlsViewController.h; sourceTree = "<group>"; };
+		C491BFF0282AD2A60062FB63 /* DirectionControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionControlsViewController.m; sourceTree = "<group>"; };
+		C491BFF8282AD2B30062FB63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C491BFF9282AD2B30062FB63 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C491BFFA282AD2B30062FB63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C491BFFD282AD3020062FB63 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C491BFFF282AD30D0062FB63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C491C001282AD8D60062FB63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C491C002282AD8D90062FB63 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C491C00E282AD9540062FB63 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		C491C00F282AD9540062FB63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C491C010282AD9540062FB63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C491C011282AD9540062FB63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C491C012282AD9550062FB63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C491C013282AD9550062FB63 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C491C014282AD9550062FB63 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C491C015282AD9550062FB63 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +147,9 @@
 		C48D513A2829EBA80040FB96 = {
 			isa = PBXGroup;
 			children = (
+				C491C00D282AD9470062FB63 /* Frameworks */,
+				C491C001282AD8D60062FB63 /* CoreGraphics.framework */,
+				C491C002282AD8D90062FB63 /* CoreText.framework */,
 				C48D51452829EBA90040FB96 /* RapidBrogue */,
 				C48D51442829EBA90040FB96 /* Products */,
 			);
@@ -56,15 +166,122 @@
 		C48D51452829EBA90040FB96 /* RapidBrogue */ = {
 			isa = PBXGroup;
 			children = (
-				C48D51462829EBA90040FB96 /* AppDelegate.swift */,
-				C48D51482829EBA90040FB96 /* SceneDelegate.swift */,
-				C48D514A2829EBA90040FB96 /* ViewController.swift */,
-				C48D514C2829EBA90040FB96 /* Main.storyboard */,
-				C48D514F2829EBA90040FB96 /* Assets.xcassets */,
-				C48D51512829EBA90040FB96 /* LaunchScreen.storyboard */,
-				C48D51542829EBA90040FB96 /* Info.plist */,
+				C491BFFF282AD30D0062FB63 /* Images.xcassets */,
+				C491BFF9282AD2B30062FB63 /* AppDelegate.h */,
+				C491BFF8282AD2B30062FB63 /* AppDelegate.m */,
+				C491BFFA282AD2B30062FB63 /* Main.storyboard */,
+				C48D51942829EC140040FB96 /* BrogueCE.ttf */,
+				C491BFFD282AD3020062FB63 /* main.m */,
+				C491BF8C282AD2730062FB63 /* platform */,
+				C491BF93282AD27C0062FB63 /* brogue */,
+				C491BFE5282AD2A60062FB63 /* PlatformCode */,
+				C491BFBC282AD29C0062FB63 /* Image Assets */,
 			);
 			path = RapidBrogue;
+			sourceTree = "<group>";
+		};
+		C491BF8C282AD2730062FB63 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				C491BF8D282AD2730062FB63 /* PlatformDefines.h */,
+				C491BF8F282AD2730062FB63 /* platform.h */,
+				C491BF90282AD2730062FB63 /* platformdependent.c */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		C491BF93282AD27C0062FB63 /* brogue */ = {
+			isa = PBXGroup;
+			children = (
+				C491BF94282AD27C0062FB63 /* PowerTables.c */,
+				C491BF95282AD27C0062FB63 /* RogueMain.c */,
+				C491BF96282AD27C0062FB63 /* Combat.c */,
+				C491BF97282AD27C0062FB63 /* Math.c */,
+				C491BF98282AD27C0062FB63 /* Items.c */,
+				C491BF99282AD27C0062FB63 /* Dijkstra.c */,
+				C491BF9A282AD27C0062FB63 /* IO.c */,
+				C491BF9B282AD27C0062FB63 /* Buttons.c */,
+				C491BF9C282AD27C0062FB63 /* Rogue.h */,
+				C491BF9D282AD27C0062FB63 /* IncludeGlobals.h */,
+				C491BF9E282AD27C0062FB63 /* Monsters.c */,
+				C491BF9F282AD27C0062FB63 /* MainMenu.c */,
+				C491BFA0282AD27C0062FB63 /* Movement.c */,
+				C491BFA1282AD27C0062FB63 /* Time.c */,
+				C491BFA2282AD27C0062FB63 /* Light.c */,
+				C491BFA3282AD27C0062FB63 /* Architect.c */,
+				C491BFA4282AD27C0062FB63 /* SeedCatalog.c */,
+				C491BFA5282AD27C0062FB63 /* Utilities.c */,
+				C491BFA6282AD27C0062FB63 /* Grid.c */,
+				C491BFA7282AD27C0062FB63 /* Recordings.c */,
+				C491BFA8282AD27C0062FB63 /* Globals.c */,
+			);
+			path = brogue;
+			sourceTree = "<group>";
+		};
+		C491BFBC282AD29C0062FB63 /* Image Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C491BFBD282AD29C0062FB63 /* gamecenterlogo_brogue@2x.png */,
+				C491BFBE282AD29C0062FB63 /* brogue_dismissbutton.png */,
+				C491BFBF282AD29C0062FB63 /* about_brogue@2x.png */,
+				C491BFC0282AD29C0062FB63 /* Default-Landscape~ipad.png */,
+				C491BFC1282AD29C0062FB63 /* brogue_directionals@2x.png */,
+				C491BFC2282AD29C0062FB63 /* icon_144x144.png */,
+				C491BFC3282AD29C0062FB63 /* brogue_sproutedseed@2x.png */,
+				C491BFC4282AD29C0062FB63 /* brogue_dismissbutton@2x.png */,
+				C491BFC5282AD29C0062FB63 /* about_brogue.png */,
+				C491BFC6282AD29C0062FB63 /* icon_72x72.png */,
+				C491BFC7282AD29C0062FB63 /* brogue_showinventory_button.png */,
+				C491BFC8282AD29C0062FB63 /* brogue_escapebutton@2x.png */,
+				C491BFC9282AD29C0062FB63 /* Default-Landscape@2x~ipad.png */,
+				C491BFCA282AD29C0062FB63 /* brogue_sproutedseed.png */,
+				C491BFCB282AD29C0062FB63 /* brogue_directionals.png */,
+				C491BFCC282AD29C0062FB63 /* brogue_escapebutton.png */,
+				C491BFCD282AD29C0062FB63 /* brogue_showinventory_button@2x.png */,
+				C491BFCE282AD29C0062FB63 /* brogue_seed.png */,
+				C491BFCF282AD29C0062FB63 /* gamecenterlogo_brogue.png */,
+				C491BFD0282AD29C0062FB63 /* brogue_seed@2x.png */,
+			);
+			path = "Image Assets";
+			sourceTree = "<group>";
+		};
+		C491BFE5282AD2A60062FB63 /* PlatformCode */ = {
+			isa = PBXGroup;
+			children = (
+				C491BFE6282AD2A60062FB63 /* RogueScene.swift */,
+				C491BFE7282AD2A60062FB63 /* BrogueViewController.swift */,
+				C491BFE8282AD2A60062FB63 /* RogueDriver.mm */,
+				C491BFE9282AD2A60062FB63 /* Cell.swift */,
+				C491BFEB282AD2A60062FB63 /* RogueDriver.h */,
+				C491BFEC282AD2A60062FB63 /* RapidBrogue-Bridging-Header.h */,
+				C491BFED282AD2A60062FB63 /* SKViewPort.swift */,
+				C491BFEE282AD2A60062FB63 /* Directional Controls */,
+			);
+			path = PlatformCode;
+			sourceTree = "<group>";
+		};
+		C491BFEE282AD2A60062FB63 /* Directional Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C491BFEF282AD2A60062FB63 /* DirectionControlsViewController.h */,
+				C491BFF0282AD2A60062FB63 /* DirectionControlsViewController.m */,
+			);
+			path = "Directional Controls";
+			sourceTree = "<group>";
+		};
+		C491C00D282AD9470062FB63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C491C010282AD9540062FB63 /* CoreGraphics.framework */,
+				C491C014282AD9550062FB63 /* CoreText.framework */,
+				C491C012282AD9550062FB63 /* Foundation.framework */,
+				C491C00E282AD9540062FB63 /* libc++.1.tbd */,
+				C491C013282AD9550062FB63 /* libc++.tbd */,
+				C491C00F282AD9540062FB63 /* QuartzCore.framework */,
+				C491C015282AD9550062FB63 /* StoreKit.framework */,
+				C491C011282AD9540062FB63 /* UIKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +342,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48D51532829EBA90040FB96 /* LaunchScreen.storyboard in Resources */,
-				C48D51502829EBA90040FB96 /* Assets.xcassets in Resources */,
-				C48D514E2829EBA90040FB96 /* Main.storyboard in Resources */,
+				C491BFD9282AD29C0062FB63 /* about_brogue.png in Resources */,
+				C491C000282AD30D0062FB63 /* Images.xcassets in Resources */,
+				C491BFD4282AD29C0062FB63 /* Default-Landscape~ipad.png in Resources */,
+				C491BFD3282AD29C0062FB63 /* about_brogue@2x.png in Resources */,
+				C491BFE4282AD29C0062FB63 /* brogue_seed@2x.png in Resources */,
+				C491BFDC282AD29C0062FB63 /* brogue_escapebutton@2x.png in Resources */,
+				C491BFDE282AD29C0062FB63 /* brogue_sproutedseed.png in Resources */,
+				C491BFDB282AD29C0062FB63 /* brogue_showinventory_button.png in Resources */,
+				C491BFDD282AD29C0062FB63 /* Default-Landscape@2x~ipad.png in Resources */,
+				C491BFD1282AD29C0062FB63 /* gamecenterlogo_brogue@2x.png in Resources */,
+				C491BFD7282AD29C0062FB63 /* brogue_sproutedseed@2x.png in Resources */,
+				C48D51DF2829EC140040FB96 /* BrogueCE.ttf in Resources */,
+				C491BFD5282AD29C0062FB63 /* brogue_directionals@2x.png in Resources */,
+				C491BFFC282AD2B30062FB63 /* Main.storyboard in Resources */,
+				C491BFDF282AD29C0062FB63 /* brogue_directionals.png in Resources */,
+				C491BFE1282AD29C0062FB63 /* brogue_showinventory_button@2x.png in Resources */,
+				C491BFD6282AD29C0062FB63 /* icon_144x144.png in Resources */,
+				C491BFD8282AD29C0062FB63 /* brogue_dismissbutton@2x.png in Resources */,
+				C491BFE0282AD29C0062FB63 /* brogue_escapebutton.png in Resources */,
+				C491BFD2282AD29C0062FB63 /* brogue_dismissbutton.png in Resources */,
+				C491BFE2282AD29C0062FB63 /* brogue_seed.png in Resources */,
+				C491BFE3282AD29C0062FB63 /* gamecenterlogo_brogue.png in Resources */,
+				C491BFDA282AD29C0062FB63 /* icon_72x72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +375,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48D514B2829EBA90040FB96 /* ViewController.swift in Sources */,
-				C48D51472829EBA90040FB96 /* AppDelegate.swift in Sources */,
-				C48D51492829EBA90040FB96 /* SceneDelegate.swift in Sources */,
+				C491BFF7282AD2A60062FB63 /* DirectionControlsViewController.m in Sources */,
+				C491BFB4282AD27C0062FB63 /* Time.c in Sources */,
+				C491BFB1282AD27C0062FB63 /* Monsters.c in Sources */,
+				C491BFF2282AD2A60062FB63 /* BrogueViewController.swift in Sources */,
+				C491BFB0282AD27C0062FB63 /* Buttons.c in Sources */,
+				C491BFFE282AD3020062FB63 /* main.m in Sources */,
+				C491BFAE282AD27C0062FB63 /* Dijkstra.c in Sources */,
+				C491BFF6282AD2A60062FB63 /* SKViewPort.swift in Sources */,
+				C491BFF4282AD2A60062FB63 /* Cell.swift in Sources */,
+				C491BFAD282AD27C0062FB63 /* Items.c in Sources */,
+				C491BFB6282AD27C0062FB63 /* Architect.c in Sources */,
+				C491BFAC282AD27C0062FB63 /* Math.c in Sources */,
+				C491BFA9282AD27C0062FB63 /* PowerTables.c in Sources */,
+				C491BFB2282AD27C0062FB63 /* MainMenu.c in Sources */,
+				C491BFBA282AD27C0062FB63 /* Recordings.c in Sources */,
+				C491BFB5282AD27C0062FB63 /* Light.c in Sources */,
+				C491BFB8282AD27C0062FB63 /* Utilities.c in Sources */,
+				C491BFF3282AD2A60062FB63 /* RogueDriver.mm in Sources */,
+				C491BFF1282AD2A60062FB63 /* RogueScene.swift in Sources */,
+				C491BFB9282AD27C0062FB63 /* Grid.c in Sources */,
+				C491BFFB282AD2B30062FB63 /* AppDelegate.m in Sources */,
+				C491BFB7282AD27C0062FB63 /* SeedCatalog.c in Sources */,
+				C491BF92282AD2730062FB63 /* platformdependent.c in Sources */,
+				C491BFAF282AD27C0062FB63 /* IO.c in Sources */,
+				C491BFAA282AD27C0062FB63 /* RogueMain.c in Sources */,
+				C491BFB3282AD27C0062FB63 /* Movement.c in Sources */,
+				C491BFBB282AD27C0062FB63 /* Globals.c in Sources */,
+				C491BFAB282AD27C0062FB63 /* Combat.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C48D514C2829EBA90040FB96 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C48D514D2829EBA90040FB96 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C48D51512829EBA90040FB96 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C48D51522829EBA90040FB96 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C48D51552829EBA90040FB96 /* Debug */ = {
@@ -172,10 +415,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -193,7 +437,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -202,7 +446,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -210,19 +454,22 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SHORT_ENUMS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/limb/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = iPad;
 			};
 			name = Debug;
 		};
@@ -232,10 +479,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -253,29 +501,32 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SHORT_ENUMS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/limb/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = iPad;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -291,20 +542,24 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RapidBrogue/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1102;
 				PRODUCT_BUNDLE_IDENTIFIER = md.taylor.RapidBrogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -319,20 +574,24 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RapidBrogue/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1102;
 				PRODUCT_BUNDLE_IDENTIFIER = md.taylor.RapidBrogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
