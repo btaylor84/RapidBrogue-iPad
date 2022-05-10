@@ -71,6 +71,7 @@ and then when confirmed with another touch your rogue will follow the path. If
 you need to cancel an action, drag your finger till it highlights your rogue,
 then lift it off safely.
 
+Hovering your finger on a spot will open a magnified view of that location.
 <br>
 <br>
 If you are using an attached keyboard, Vi/Nethack keyboard movements (i.e.
