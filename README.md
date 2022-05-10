@@ -61,7 +61,7 @@ allows competitions where every player enters the same dungeon layout, and sees
 how far they can get before dying. Check out the Reddit forum (in Resources) for contest information.
 
 
-I### In-game movement and screen touches
+### In-game movement and screen touches
 <img src="https://user-images.githubusercontent.com/17453830/163440389-ae72701e-014e-4cbd-aeda-fec4db42ac0e.png" alt="compass rose" width=220 align=left>
 The "compass rose" figure on the left lower side of the screen can be used to
 direct your rogue by tapping or holding down one "arrow" of the compass in the
