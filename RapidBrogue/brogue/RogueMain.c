@@ -988,6 +988,7 @@ void gameOver(char *killedBy, boolean useCustomPhrasing) {
 
         player.currentHP = 0; // So it shows up empty in the side bar.
         refreshSideBar(-1, -1, false);
+        messageWithColor(buf, &badMessageColor, REQUIRE_ACKNOWLEDGMENT);
         
         // Seth: BT
         setBrogueGameEvent(CBrogueGameEventMessagePlayerHasDied);

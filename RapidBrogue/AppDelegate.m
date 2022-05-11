@@ -12,7 +12,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    application.applicationSupportsShakeToEdit = YES;
+    UIStoryboard *storyboard = nil;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+     if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone) {
+         storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
+     } else {
+         storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     }
+    
+     [self.window setRootViewController:[storyboard instantiateInitialViewController]];
+     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

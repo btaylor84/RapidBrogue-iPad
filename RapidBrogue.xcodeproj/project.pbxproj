@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C480E28F282C246F00740450 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C480E28E282C246F00740450 /* iPhone.storyboard */; };
 		C48D51DF2829EC140040FB96 /* BrogueCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48D51942829EC140040FB96 /* BrogueCE.ttf */; };
 		C491BF92282AD2730062FB63 /* platformdependent.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF90282AD2730062FB63 /* platformdependent.c */; };
 		C491BFA9282AD27C0062FB63 /* PowerTables.c in Sources */ = {isa = PBXBuildFile; fileRef = C491BF94282AD27C0062FB63 /* PowerTables.c */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C480E28E282C246F00740450 /* iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		C48D51432829EBA90040FB96 /* RapidBrogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidBrogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48D51942829EC140040FB96 /* BrogueCE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrogueCE.ttf; sourceTree = "<group>"; };
 		C491BF8D282AD2730062FB63 /* PlatformDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefines.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				C491BFF9282AD2B30062FB63 /* AppDelegate.h */,
 				C491BFF8282AD2B30062FB63 /* AppDelegate.m */,
 				C491BFFA282AD2B30062FB63 /* Main.storyboard */,
+				C480E28E282C246F00740450 /* iPhone.storyboard */,
 				C48D51942829EC140040FB96 /* BrogueCE.ttf */,
 				C491BFFD282AD3020062FB63 /* main.m */,
 				C491BF8C282AD2730062FB63 /* platform */,
@@ -361,6 +364,7 @@
 				C491BFD6282AD29C0062FB63 /* icon_144x144.png in Resources */,
 				C491BFD8282AD29C0062FB63 /* brogue_dismissbutton@2x.png in Resources */,
 				C491BFE0282AD29C0062FB63 /* brogue_escapebutton.png in Resources */,
+				C480E28F282C246F00740450 /* iPhone.storyboard in Resources */,
 				C491BFD2282AD29C0062FB63 /* brogue_dismissbutton.png in Resources */,
 				C491BFE2282AD29C0062FB63 /* brogue_seed.png in Resources */,
 				C491BFE3282AD29C0062FB63 /* gamecenterlogo_brogue.png in Resources */,
@@ -467,7 +471,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/limb/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Production/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = iPad;
 			};
@@ -524,7 +528,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/limb/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Production/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = iPad;
 				VALIDATE_PRODUCT = YES;
@@ -549,7 +553,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +563,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -581,7 +585,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +595,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
