@@ -33,22 +33,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lc5-sd-ebA">
-                                        <rect key="frame" x="8" y="196" width="146" height="189"/>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lc5-sd-ebA">
+                                        <rect key="frame" x="8" y="225" width="160" height="160"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Pe4-Sj-Lvz"/>
-                                            <constraint firstAttribute="height" constant="260" id="mI9-MB-Stv"/>
+                                            <constraint firstAttribute="height" constant="160" id="95m-T9-XUL"/>
+                                            <constraint firstAttribute="width" secondItem="lc5-sd-ebA" secondAttribute="height" multiplier="1:1" id="oLf-rD-XnG"/>
                                         </constraints>
                                         <connections>
                                             <segue destination="98X-9t-DAK" kind="embed" id="bJu-Eo-GDf"/>
                                         </connections>
                                     </containerView>
-                                    <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" image="brogue_directionals.png" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-oi-9AK">
-                                        <rect key="frame" x="5" y="222" width="152" height="153"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euy-vp-zSR">
-                                        <rect key="frame" x="8" y="8" width="146" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euy-vp-zSR">
+                                        <rect key="frame" x="8" y="8" width="151" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="151" id="Cdt-cF-AvV"/>
                                             <constraint firstAttribute="height" constant="31" id="ZvE-x5-r9O"/>
@@ -70,6 +66,8 @@
                                 <constraints>
                                     <constraint firstItem="euy-vp-zSR" firstAttribute="leading" secondItem="3xo-yZ-1ZT" secondAttribute="leadingMargin" id="5P6-s9-0J1"/>
                                     <constraint firstItem="lc5-sd-ebA" firstAttribute="leading" secondItem="3xo-yZ-1ZT" secondAttribute="leadingMargin" id="8Dj-P1-apn"/>
+                                    <constraint firstItem="euy-vp-zSR" firstAttribute="top" secondItem="3xo-yZ-1ZT" secondAttribute="top" constant="8" id="NRg-uj-iB6"/>
+                                    <constraint firstAttribute="bottom" secondItem="lc5-sd-ebA" secondAttribute="bottom" constant="8" id="OTT-45-Gqw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -100,14 +98,30 @@
         <scene sceneID="abk-UT-Ph1">
             <objects>
                 <viewController id="98X-9t-DAK" customClass="DirectionControlsViewController" sceneMemberID="viewController">
-                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Qca-wp-nNY">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qca-wp-nNY">
                         <rect key="frame" x="0.0" y="0.0" width="134" height="148"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-eE-cyg">
-                                <rect key="frame" x="-6" y="1" width="154" height="165"/>
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-qV-2j8" userLabel="Catch All Button">
+                                        <rect key="frame" x="-8" y="-14" width="169" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="98X-9t-DAK" eventType="touchDown" id="2Nq-zM-GOs"/>
+                                            <action selector="buttonUp:" destination="98X-9t-DAK" eventType="touchUpInside" id="RnH-LV-YfT"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-ze-Iun" userLabel="Up Button">
                                         <rect key="frame" x="55" y="-10" width="49" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -244,48 +258,18 @@
                                             <action selector="buttonUp:" destination="98X-9t-DAK" eventType="touchDragOutside" id="yQJ-aP-mQa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-qV-2j8" userLabel="Catch All Button">
-                                        <rect key="frame" x="-8" y="-14" width="169" height="193"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="160" verticalHuggingPriority="160" fixedFrame="YES" image="brogue_directionals.png" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-oi-9AK">
+                                        <rect key="frame" x="0.0" y="16.5" width="160" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonDown:" destination="98X-9t-DAK" eventType="touchDown" id="2Nq-zM-GOs"/>
-                                            <action selector="buttonUp:" destination="98X-9t-DAK" eventType="touchUpInside" id="RnH-LV-YfT"/>
-                                        </connections>
-                                    </button>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjG-cC-vAC">
-                                <rect key="frame" x="0.0" y="203" width="200" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two Fingers to Drag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-MH-oht">
-                                        <rect key="frame" x="23" y="-3" width="154" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="fnM-yM-huL"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="134" height="148"/>
-                    <connections>
-                        <outlet property="dragAreaView" destination="YjG-cC-vAC" id="nf3-6Y-uX2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ff5-pr-I2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,6 +281,9 @@
         <image name="brogue_escapebutton.png" width="276.48001098632812" height="59"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -23,9 +23,10 @@ import SpriteKit
 
 
 
-fileprivate let kESCKey = "\u{1B}"    // 27
-fileprivate let kDelKey = "\u{B1}"    // 177
-fileprivate let kEnterKey = "\n"
+fileprivate let kESCKey: UInt8 = 27    // "\u{1B}"    // 27
+fileprivate let kDelKey: UInt8 = 177   //  "\u{B1}"    // 177
+fileprivate let kEnterKey: UInt8 = 10  // "\n"
+fileprivate let kSpaceKey: UInt8 = 32
 
 private func synchronized<T>(_ lock: Any, _ body: () throws -> T) rethrows -> T {
     objc_sync_enter(lock)
@@ -64,8 +65,8 @@ fileprivate func getCellCoords(at point: CGPoint) -> CGPoint {
 
 // TODO: switch to Character
 extension String {
-    var ascii: UInt8 {
-        return (unicodeScalars.map { UInt8(min(255,$0.value)) }).first!
+    var ascii: UInt8? {
+        self[self.startIndex].asciiValue
     }
 }
 
@@ -219,7 +220,7 @@ final class BrogueViewController: UIViewController {
  
 extension BrogueViewController {
     @IBAction func escButtonPressed(_ sender: Any) {
-        addKeyEvent(event: kESCKey.ascii)
+        addKeyEvent(event: kESCKey)
         inputTextField.resignFirstResponder()
     }
     
@@ -238,7 +239,7 @@ extension BrogueViewController {
 
 extension BrogueViewController {
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        addKeyEvent(event: kESCKey.ascii)
+        addKeyEvent(event: kESCKey)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -439,7 +440,7 @@ extension BrogueViewController {
                 return
             }
             
-            addKeyEvent(event: key.ascii)
+            addKeyEvent(event: key.ascii ?? kSpaceKey)
         }
     }
     
@@ -484,7 +485,7 @@ extension BrogueViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         inputTextField.resignFirstResponder()
-        addKeyEvent(event: "\n".ascii)
+        addKeyEvent(event: kEnterKey)
         self.escButton.isHidden = true
         return true
     }
@@ -501,11 +502,11 @@ extension BrogueViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if string.isEmpty {
-            addKeyEvent(event: kDelKey.ascii)
+            addKeyEvent(event: kDelKey)
         } else {
             // string may be multiple characters, if a paste operation occured
             for char in string {
-                addKeyEvent(event: char.asciiValue ?? " ".ascii)
+                addKeyEvent(event: char.asciiValue ?? kSpaceKey)
             }
         }
         return true
@@ -547,29 +548,29 @@ extension BrogueViewController: UITextFieldDelegate {
                  }
              }
             
-            var sendKey: String = ""
+            var sendKey: UInt8? = nil
             // this is a physical key, independent of modifiers such as CTRL, OPTION, SHIFT
             switch key.keyCode {
                 
             // handle cardinal arrow keys, and keypad equivalents
             case .keyboardUpArrow, .keypad8 :
-                sendKey = kUP_Key
+                sendKey = kUP_Key.ascii
             case .keyboardDownArrow, .keypad2 :
-                sendKey = kDOWN_key
+                sendKey = kDOWN_key.ascii
             case .keyboardLeftArrow, .keypad4 :
-                sendKey = kLEFT_key
+                sendKey = kLEFT_key.ascii
             case .keyboardRightArrow, .keypad6 :
-                sendKey = kRIGHT_key
+                sendKey = kRIGHT_key.ascii
                 
             // handle remaining keypad arrow equivalents
             case .keypad7 :
-                sendKey = kUPLEFT_key
+                sendKey = kUPLEFT_key.ascii
             case .keypad9 :
-                sendKey = kUPRight_key
+                sendKey = kUPRight_key.ascii
             case .keypad1 :
-                sendKey = kDOWNLEFT_key
+                sendKey = kDOWNLEFT_key.ascii
             case .keypad3 :
-                sendKey = kDOWNRIGHT_key
+                sendKey = kDOWNRIGHT_key.ascii
                 
             // handle special keys, ESC, Enter, DEL, Backspace
             case .keyboardEscape :
@@ -582,10 +583,11 @@ extension BrogueViewController: UITextFieldDelegate {
             case .keyboardDeleteOrBackspace, .keyboardDeleteForward :
                 sendKey = kDelKey
             default :
-                sendKey = key.characters        // DON'T ignore modifiers, to allow shifted letters
+                sendKey = key.characters.ascii         // DON'T ignore modifiers, to allow shifted letters
             }
-            if !sendKey.isEmpty {
-                addKeyEvent(event: sendKey.ascii)
+             
+            if let eventKey = sendKey {
+                addKeyEvent(event: eventKey)
             }
         }
     }

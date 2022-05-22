@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "83259F2B-DF33-4C93-91F9-6373AAEC3B9A"
+            uuid = "AD79F527-A8F7-486E-A0B9-0956F8F4FAE4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RapidBrogue/brogue/Recordings.c"
+            filePath = "RapidBrogue/PlatformCode/BrogueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1235"
-            endingLineNumber = "1235"
-            landmarkName = "saveRecording(filePathWithoutSuffix)"
-            landmarkType = "9">
+            startingLineNumber = "504"
+            endingLineNumber = "504"
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1B9459CD-2636-4695-B0F3-D43A6AD92568"
+            uuid = "D9DDA976-5230-49DC-AB60-AEBDBF61133D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RapidBrogue/AppDelegate.m"
+            filePath = "RapidBrogue/PlatformCode/BrogueViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "addKeyEvent(event:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
