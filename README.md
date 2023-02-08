@@ -123,4 +123,4 @@ well play-tested.
 
 ### Tips
 The app is free and open source, but there are fees associated with publishing it, so tips
-are apprecaited at [buy me a coffee.](https://ko-fi.com/cameradv)
+are appreciated at [buy me a coffee.](https://ko-fi.com/cameradv)
